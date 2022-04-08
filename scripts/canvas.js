@@ -65,7 +65,7 @@ function getBostonMap() {
 
    var latlon = CENTER_CORD.lat + "," + CENTER_CORD.long;
 
-   if (config.MAPS_KEY != "") {
+   if (process.env.GOOGLE_MAPS_API_KEY != "") {
       var img_url = "https://maps.googleapis.com/maps/api/" +
          // Center Point
          "staticmap?center=" + latlon +
@@ -83,7 +83,7 @@ function getBostonMap() {
          "&style=feature:transit|visibility:off" +
          // Remove Points of Interest
          "&style=feature:poi|visibility:off" +
-         "&key=" + config.MAPS_KEY;
+         "&key=" + process.env.GOOGLE_MAPS_API_KEY;
    } else {
       console.log("Asset is being used")
       var img_url = "assets/bostonMap.png";
