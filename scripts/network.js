@@ -1,5 +1,3 @@
-const { handler } = require("../netlify/functions/mbta-token-hider/mbta-token-hider");
-
 const APIKEY = process.env.MBTA_API_KEY;
 const KEY_ATTRIBUTE = "&api_key=" + APIKEY;
 var AsyncFunction = Object.getPrototypeOf(async function() {}).constructor;
@@ -206,5 +204,3 @@ const fetchLiveVeichles = {
 
 // Begin Fetching Data
 fetchMbtaData(routeEnpoint, fetchRoutes);
-
-handler("get")
