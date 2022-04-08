@@ -1,0 +1,44 @@
+html {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-family: "Dosis", sans-serif;
+   line-height: 1.6;
+   color: #666;
+   background: black;
+}
+
+
+img {
+   position: absolute;
+   display: block;
+   margin: 0;
+   max-width: 100%;
+   /* MAKE IAMGE UNSELECTABLE */
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+canvas {
+   position: absolute;
+   width: 600px;
+   height: 600px;
+   /* left: 0; */
+   top: 0;
+}
+
+#layer1 {
+   box-sizing: border-box;
+   height: 610px;
+   border-bottom: black solid 22px;
+}
+
+#layer2 {
+   border: white solid 4px;
+}
+
+div {
+   margin: auto;
+   width: 600px;
+   height: 600px;
+}
