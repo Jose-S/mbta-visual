@@ -1,4 +1,4 @@
-const APIKEY = config.MBTA_KEY;
+const APIKEY = process.env.MBTA_API_KEY;
 const KEY_ATTRIBUTE = "&api_key=" + APIKEY;
 var AsyncFunction = Object.getPrototypeOf(async function () {}).constructor;
 
